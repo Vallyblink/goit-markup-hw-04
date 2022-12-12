@@ -71,7 +71,7 @@
  .main-nav{
    display: flex;
    align-items: center;
-   margin-right: 200px;
+   margin-right: 250px;
    
  }
 
@@ -124,7 +124,6 @@
 
  }
 
-
  .navigation:hover,
  .navigation:focus{
     color: var(--accent-color);
@@ -154,6 +153,24 @@
    margin-right: 40px;
  }
 
+ .mail-icon::before{
+   content: '';
+   display: inline-block;
+   outline: 1px solid red;
+   width: 16px;
+   height: 12px;
+   margin-right: 10px;
+ }
+
+ .phone-icon::before{
+   content: '';
+   display: inline-block;
+   outline: 1px solid red;
+   width: 16px;
+   height: 12px;
+   margin-right: 10px;
+ }
+
  .contact:hover,
  .contact:focus{
     color: var(--accent-color);
@@ -161,17 +178,15 @@
 
 
 /* main */
-
- .section-main {
-
-
- }
+.section-main{
+   background-color: rgba(47, 48, 58, 1);
+}
 
  .main-hero{
-   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/mainimg.svg);
-   background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/mainimg.svg);
+    background-size: contain;
+    max-width:1600px;
     padding: 200px 0px;
-    background-color: rgba(47, 48, 58, 1);
     margin-left: auto;
     margin-right: auto;
    
