@@ -47,12 +47,9 @@
 
 .section.no-padding{
    padding-top: 0px;
-   padding-bottom: 94px;
+   
 }
 
-.team.section{
-   padding-top: 0px;
-}
 
    /*Header*/
 
@@ -63,19 +60,14 @@
 
  .site-nav {
     gap: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+   
  }
 
  .auth-nav{
-   gap: 40px;
    justify-content: end;
-   padding-top: 25px;
-   padding-bottom: 25px;
    align-items: center;
  }
-   
-
+ 
  .main-nav{
    display: flex;
    align-items: center;
@@ -127,6 +119,9 @@
     
     display: block;
 
+    padding-top: 25px;
+    padding-bottom: 25px;
+
  }
 
 
@@ -150,6 +145,13 @@
  
     margin-left: auto;
 
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+ }
+
+ .mail-icon{
+   margin-right: 40px;
  }
 
  .contact:hover,
@@ -162,8 +164,17 @@
 
  .section-main {
 
+
+ }
+
+ .main-hero{
+   background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/mainimg.svg);
+   background-size: cover;
     padding: 200px 0px;
     background-color: rgba(47, 48, 58, 1);
+    margin-left: auto;
+    margin-right: auto;
+   
  }
 
  .main-button {
