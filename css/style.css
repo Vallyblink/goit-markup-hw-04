@@ -50,28 +50,55 @@
    
 }
 
-
    /*Header*/
 
- .site-nav,
- .auth-nav {
-  display: flex;
- }
-
  .site-nav {
+   display: flex;
     gap: 50px;
    
  }
 
  .auth-nav{
+   display: flex;
    justify-content: end;
    align-items: center;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   gap: 40px;
+
  }
+
+.phone-icon{
+   color: var(--secondary-text-color);
+   margin-right: 10px;
+   position: relative;
+   top: 3px;
+ }
+
+ .mail-icon{
+   color: var(--secondary-text-color);
+ margin-right: 10px;
+ position: relative;
+ top: 2px;
+}
+
+.mail-icon:hover,
+.mail-icon:focus{
+   fill: var(--accent-color);
+}
+
+.phone-icon:hover,
+.phone-icon:focus{
+   fill: var(--accent-color);
+}
  
  .main-nav{
    display: flex;
    align-items: center;
-   margin-right: 250px;
+   margin-right: auto;
+   
+   padding-top: 25px;
+   padding-bottom: 25px;
    
  }
 
@@ -115,12 +142,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
+    padding-top: 32px;
+    padding-bottom: 32px;
     
     display: block;
 
-    padding-top: 25px;
-    padding-bottom: 25px;
 
  }
 
@@ -139,37 +165,35 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-    display: block;
  
     margin-left: auto;
 
-    padding-top: 25px;
-    padding-bottom: 25px;
+   
 
  }
 
- .mail-icon{
-   margin-right: 40px;
- }
 
- .mail-icon::before{
+ /* .mail-icon::before{
    content: '';
    display: inline-block;
-   outline: 1px solid red;
    width: 16px;
    height: 12px;
    margin-right: 10px;
+   background-image: url(../images/envelope.svg);
  }
 
  .phone-icon::before{
    content: '';
    display: inline-block;
-   outline: 1px solid red;
-   width: 16px;
-   height: 12px;
+   width: 10px;
+   height: 16px;
    margin-right: 10px;
- }
+   background-image: url(../images/phone.svg);
+   background-size: contain;
+ } */
 
  .contact:hover,
  .contact:focus{
@@ -183,7 +207,7 @@
 }
 
  .main-hero{
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/mainimg.svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/mainimg.jpg);
     background-size: contain;
     max-width:1600px;
     padding: 200px 0px;
@@ -210,6 +234,10 @@
     margin: 0 auto;
     width: 216px;
     height: 50px;
+ }
+
+ .main-button:hover, .main-button:focus{
+   background-color: var(--secondary-text-color);
  }
 
                              /* Benefits */
@@ -284,6 +312,19 @@
 
 }
 
+.icon-div{
+   display: flex;
+   width: 270px;
+   height: 120px;
+   background-color: rgba(245, 244, 250, 1);
+   margin-bottom: 30px;
+   align-items: center;
+   justify-content: center;
+}
+
+.benefits-icon{
+   align-items: center;
+}
 
    
                                       /* WORK SECTION------------------------------------------------------------ */
@@ -310,19 +351,17 @@
 
    text-align: center;
 
-   width: 270px;
    background-color: var(--white-color);
 
 }
 
 .namerole{
    padding-top: 30px;
-   padding-bottom: 30px;
+   margin-bottom: 16px;
 }
 
 .team.section{
    background-color: rgba(245, 244, 250, 1);
-   ;
 }
   
 .name {
@@ -333,21 +372,108 @@
     line-height: 1.18;
 
    margin-bottom: 10px;
-   margin-right: 0px;
+   margin-right: 0px;}
 
-
- 
-}
-
-   .role {
+.role {
       color: var(--secondary-text-color);
 
       font-size: 16px;
-      line-height: 1.18
+      line-height: 1.18}
 
+.team-social-list{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   margin-bottom: 30px;
+   margin-top: 16px;
+   
+}
+.team-social-list li{
+   box-shadow: none;
+}
 
-      
+.icon-item{
+   width:44px;
+   height: 44px;
+}
+
+.social-link{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    }
+
+.social-icon {
+  fill: rgba(175, 177, 184, 1);
+}
+
+.social-link:hover,
+.social-link:focus{
+   background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon{
+   fill: var(--white-color);
+}
+
+/* ////////// ____________________CLIENT___________________________________ */
+
+.client-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform:initial;
+
+   color: var(--primary-text-color);
+
+   margin-bottom: 50px;
+
+}
+.client-main-box{
+   display: flex;
+   gap: 30px;
+   align-items: center;
+
+   
+}
+
+.client-box{
+   width: 170px;
+   height: 100px;
+
+   border: 1px solid rgba(175, 177, 184, 1);
+   border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.client-box:hover, .client-box:focus{
+   border: 1px solid var(--accent-color);
+}
+
+.client-icon{
+   width: 100%;
+   height: 100%;
+   fill: rgba(175, 177, 184, 1);
+   padding: 16px 32px;
+   cursor: pointer;
+}
+
+.client-icon:hover,.client-icon:focus{
+   fill: var(--accent-color);
+}
+
+
 
 
    /*--------------------------------- footer ----------------------------------------------*/
@@ -399,6 +525,43 @@
 
     .footer-list li :not(last child){
       margin-bottom: 8px;
+    }
+
+    .footer-container{
+      display: flex;
+      align-items:baseline;
+      gap: 70px;
+      margin-left: 215px;
+
+    }
+
+    .invitation{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--white-color);
+      text-decoration: none;
+      align-self: start;
+    }
+
+    .footer-link{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 206px;
+      height: 80px;
+    }
+
+    .social-icon.footer {
+      fill: var(--white-color)
+    }
+    
+    .icon-item.footer{
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
     }
 
     /*------------------------------------- PortfolioPage --------------------*/
@@ -456,6 +619,8 @@
 .page-button:focus{
     color: var(--white-color);
     background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+   border-radius: 4px;
 
 }
 
@@ -486,3 +651,8 @@
    border-right: 1px solid #EEEEEE;
 }
 
+.portfolio-box:hover, .portfolio-box:focus{
+   border: 1px solid #EEEEEE;
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
