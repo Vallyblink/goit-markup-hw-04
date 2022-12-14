@@ -68,28 +68,16 @@
 
  }
 
-.phone-icon{
-   fill: var(--secondary-text-color);
-   margin-right: 10px;
-   position: relative;
-   top: 3px;
- }
-
- .mail-icon{
+.head-icon{
    fill: var(--secondary-text-color);
    margin-right: 10px;
    position: relative;
    top: 2px;
-}
+ }
 
-.mail-icon:hover,
-.mail-icon:focus{
-   fill: var(--accent-color);
-}
-
-.phone-icon:hover,
-.phone-icon:focus{
-   fill: var(--accent-color);
+.head-icon:hover,
+.head-icon:focus{
+   fill: var(--accent-color); 
 }
  
  .main-nav{
@@ -229,6 +217,11 @@
  .contact:focus{
     color: var(--accent-color);
  }
+
+.contact:hover .head-icon{
+   fill: var(--accent-color);
+ }
+
 
 
 /* main */
